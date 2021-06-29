@@ -21,6 +21,8 @@ section {
 	position: relative;
 	flex-direction: column;
 	scroll-snap-align: center;
+	font-family: 'Cinzel Decorative', cursive;
+	color: #fff;
 }
 
 @media (min-height: 30em) {
@@ -137,6 +139,25 @@ section {
 }
 
 /* Content */
+.section__title {
+	z-index: 1;
+
+	display: block;
+	margin-top: 5%;
+	font-size: 100px;
+	align-self: center;
+}
+
+.section__subtitle {
+	z-index: 1;
+
+	display: block;
+	/*margin-top: 5%;*/
+	font-size: 20px;
+	font-weight: 100;
+	align-self: center;
+}
+
 .section__content {
 	flex-grow: 1;
 	display: flex;
@@ -213,44 +234,6 @@ section {
 	text-decoration: none;
 	cursor: pointer;
   } 
-
-
-
-
-
-
-/*Image Magnifier Glass 
-
-* {box-sizing: border-box;}
-
-.img-magnifier-container {
-  position: relative;
-}
-
-.img-magnifier-glass {
-  position: absolute;
-  border: 3px solid #000;
-  border-radius: 50%;
-  cursor: none;
-  width: 150px;
-  height: 150px;
-}
-
-#map_container {
-	width: 100%;
-	height: 100%;
-}
-#wildlandmap {
-	width: 50%;
-	display: block;
-	cursor: pointer;
-	transition: 0.3s;
-	border-radius: 5px;
-	margin: 0 auto 0 auto;
-}
-#wildlandmap:hover {
-	opacity: 0.7;
-} */
 
 /*inkblot modal*/
 @font-face {
@@ -485,4 +468,20 @@ section {
 	.modal-content {
 	  width: 100%;
 	}
-  } 
+  }
+
+/* Map */
+#map_container {
+	height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#wildlandmap {
+	height: 60%;
+
+	border-radius: 20px;
+	box-shadow: inset 0 0 100px black;
+}
