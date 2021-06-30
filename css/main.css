@@ -146,6 +146,7 @@ section {
 	margin-top: 5%;
 	font-size: 100px;
 	align-self: center;
+	font-family: 'Cinzel Decorative', cursive;
 }
 
 .section__subtitle {
@@ -153,9 +154,10 @@ section {
 
 	display: block;
 	/*margin-top: 5%;*/
-	font-size: 20px;
+	font-size: 23px;
 	font-weight: 100;
 	align-self: center;
+	font-family: 'Cinzel Decorative', cursive;
 }
 
 .section__content {
@@ -164,6 +166,7 @@ section {
 	justify-content: center;
 	align-items: center;
 	padding: 1.25rem;
+	font-family: 'Oldenburg';
 }
 
 .section__panel {
@@ -172,7 +175,7 @@ section {
 	color: #cdcdcd;
 	border-radius: 20px;
 
-	width: 300px;
+	width: 400px;
 	height: 80%;
 }
 .section__panel.white {
