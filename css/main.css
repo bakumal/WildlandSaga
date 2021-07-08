@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
 	padding-top: calc(50vh - 100px);
 	
 	opacity: 0;
+	color: #eaeaea;
 	transform: translateY(40px);
 
 	font-family: 'Cinzel Decorative', cursive;
@@ -50,6 +51,7 @@ body::-webkit-scrollbar {
 	font-size: 23px;
 
 	opacity: 0;
+	color: #eaeaea;
 	transform: translateY(40px);
 
 	font-family: 'Cinzel Decorative', cursive;
@@ -175,8 +177,8 @@ section a:hover {
 /* ID Specific Styling */
 
 #rules span {
-	padding-left: 1em;
-    text-indent:-1em;
+	padding-left: 1.5em;
+    text-indent:-1.5em;
 }
 
 #map {
