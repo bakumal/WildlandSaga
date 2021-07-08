@@ -1,6 +1,10 @@
-
-/* Section Styling */
 @media only screen and (max-width: 768px) {
+	/* Hero Styling */
+	.hero__title {
+		font-size: 12vw;
+	}
+
+	/* Section Styling */
 	.section__title {
 		font-size: 12vw;
 	}
