@@ -1,443 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-
-    <title>Wildland Saga</title>
-
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <link rel="icon" type="image/png" href="./wildlands.ico">
-</head>
-
-<body>    
-    <nav role="navigation">
-        <div id="nav__toggle">
-            <!-- 'Fake' checkbox to check :checked -->
-            <input type="checkbox" />
-
-            <!-- Hamburger menu layers -->
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <!-- Popout menu -->
-            <ul id="nav__menu">
-                <a href="#home">
-                <li>Wildland Saga</li></a>
-                <a href="#info">
-                <li>What is Wildland Saga?</li></a>
-                <a href="#join">
-                <li>Starting your Saga</li></a>
-                <a href="#rules">
-                <li>The Rules</li></a>
-                <a href="#homebrew">
-                <li>Homebrew Mechanics</li></a>
-                <a href="#events">
-                <li>Joining Events</li></a>
-                <a href="#settlement">
-                <li>The Settlement</li></a>
-                <a href="#crafting">
-                <li>Gathering & Crafting</li></a>
-                <a href="#charactercreation">
-                <li>Character Creation</li></a>
-                <a href="#map">
-                <li>The Map</li></a>
-            </ul>
-        </div>
-    </nav>
-
-    <main>
-
-        <section id="home" class="section hero">
-            <div class="hero__bg">
-                <img class="hero__img" src="./resources/background.png" />
-            </div>
-
-            <div data-content class="hero__content">
-                <div class="hero__text">
-                    <h1 class="hero__title">Wildland Saga</h1>
-
-                    <p class="hero__intro">A Community-Driven Dungeons and Dragons Game</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="info" class="section">
-            <h1 class="section__title"> What is Wildland Saga?</h1>
-            <div data-content class="section__content"> 
-                <div data-content class="section__panel" style="width: 50%; text-align: center;">
-                    <span class="section__subtitle">
-                        The Wildlands, a group of dangerous, rough and unexplored islands, avoided by all but those who would put their lives on the line for fame and riches... or those looking for adventure. Who knows what you might find here? <br><br>
-                   
-                        Wildland Saga is a community-driven game for D&D 5th edition. Set in a grim, norse-inspired setting, the players try to build a settlement in unexplored lands, while roaming those same lands in search for ancient treasures.
-                    </span>
-
-                </div>
-            </div>
-
-        </section>
-
-        <section id="join" class="section">
-            <h1 class="section__title"> Starting YOUR Saga</h1>
-
-            <div data-content class="section__content">
-                <div class="section__panel" style="text-align: center;">
-                    <p class="section__subtitle" style="font-size: 30px;">
-                        <a href="https://bakumal.github.io/WildlandSaga/#rules" style="color: whitesmoke">Read the Rules.</a>
-                    </p>
-                </div>
-
-                <div class="section__panel" style="text-align: center;">
-                    <p class="section__subtitle" style="font-size: 30px;">
-                        <a href="https://discord.gg/6NgVPpU" style="color: whitesmoke;" target="_blank">Join the Discord.</a>
-                    </p>
-                </div>
-
-                <div class="section__panel" style="text-align: center;">
-                    <p class="section__subtitle" style="font-size: 30px;">
-                        <a href="https://bakumal.github.io/WildlandSaga/#charactercreation" style="color: whitesmoke">Create your character.</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="rules" class="section">
-
-            <h1 class="section__title">The Rules</h1>
-            <h2 class="section__subtitle">Below is a non-exhaustive list of rules that every member is expected to adhere to.</h2>
-
-            <div data-content class="section__content" style="font-size: 16px;"> 
-                <div data-content class="section__panel">
-                    <span>
-                    1. Be nice, be kind. We are all here to play a game and have fun. Harassment and hate will <i><b>not</b></i> be tolerated.<br><br>
-                    2. Should conflict arise, we expect it to be handled maturely. This means that out of character conflict should not be handled publicly. In-character grievances should be worked out with your fellow players. <br> 
-                    If you feel uncomfortable with anything, please do not hesitate to let an admin know. <br><br>
-                    3. We expect everyone to play fair. Meta-gaming, rules-lawyering, and just straight up cheating are all considered to be unfair.<br><br>
-                    </span>
-
-                </div>
-                
-                <div data-content class="section__panel">
-                    <span>
-                    4. Avoid NSFW material and sexual talk. The server is aimed at adults, but everyone is comfortable with different levels of risque. Should things look to be heading in this direction in a game, feel free to 'fade to black'.<br><br>
-                    5. Avoid oversharing. Be mindful that most users might be looking for a more casual gaming and chatting experience. As we want everyone to be comfortable, please refrain from sharing excessive personal details.<br><br>
-                    6. If you sign up for a session, the session's DM will expect you to be there. Please be mindful that creating and balancing sessions requires time and energy. Signing off at the last second is sometimes unavoidable, but please keep the occurences to a minimum.
-                    </span>
-                </div>   
-            </div>
-
-        </section>
-
-        <section id="homebrew" class="section">
-
-            <h1 class="section__title">Homebrew Mechanics</h1>
-            <h2 class="section__subtitle">To balance this west-march style of game, Wildland Saga uses some homebrew rules outlined below.</h2>
-
-            <div data-content class="section__content" style="font-family: 'Oldenburg'; font-size: 14px;"> 
-                <div data-content class="section__panel">
-                    <span>
-                    <b>Lower hit point pool:</b> To balance for the shorter sessions, characters will have lower hit points. This calculation is already incorporated in the gsheet, which will automatically calculate your hit points based on your Constitution score and class(es).<br><br>
-                    <b>Hit die recovery:</b> As there are less short rests in this style of game, characters can use their action to spend any number of hit dice, and recover hit points equal to the amount rolled (<i>without</i> adding their Constitution modifier; this is reserved for short rests).<br> Additionally, warlocks can use their action to spend half of their hit dice, rounded up, to recover a Pact Magic spell slot.<br><br>
-                    <b>Level Range</b> To prevent excluding players from sessions due to level gaps, a level range is in effect. In the current arc, characters start at level 3 and max out at level 5. This level range increases with new arcs.<br><br>
-                </span>
-
-                </div>
-                
-                <div data-content class="section__panel">
-                    <span>
-                        <b>Injuried State:</b> To keep things more interesting for all players, the 'injuried state' exists. A player character enters this state when they reach 0 hit points, instead of being knocked unconscious. While in this state you gain the following conditions:<br><br>
-                         - You can no longer concentrate on spells, if you are concentrating on a spell it immediately fails.<br><br>
-                    
-                         - If you suffer damage you roll a Death Saving Throw. The first two failures result in a minor injury, and a third failure causes a major injury or death. If you succeed three times you are knocked unconscious. <br><br>
-                        
-                         - If you suffer damage from a single instance that exceeds your Constitution score, you automatically fail a Death Saving Throw.<br><br>
-                        
-                         - Death Saving Throw results reset after a short or long rest.<br>
-                    </span>
-                </div>
-
-
-            <div data-content class="section__panel">
-                <span> 
-                    <b>Wild shape:</b> The druid's wild shape has the following homebrew changes:<br><br>
-
-                     - You can use the Wild Shape feature as an At-Will ability.<br><br>
-
-                     - Whilst Wild Shaped you can use an action to transform into a different creature, or use a bonus action to revert back to your normal form.<br><br>
-
-                     - You gain a Wild Shape Hit Point total equal to your squared wisdom modifier times your druid level ((Wisdom Modifier^2) * Druid Level).
-                     These new Hit Points are shared between any form you take, and once they are depleted you can no longer use the Wild Shape feature until you finish a short or long rest.<br><br>
-
-                     - When you finish a short rest you can spend a Hit Dice to restore 1d10 to your Wild Shape Hit Point total. When you finish a Long rest you regain all of your Wild Shape Hit Points.<br><br>
-
-                     - Circle of the Moon Druids can now ignore the Limitations section on Beast Shapes.
-                </span>
-
-            </div>
-
-                
-            </div>
-
-        </section>
-
-        <section id="events" class="section">
-
-            <h1 class="section__title">Events</h1>
-
-            <div data-content class="section__content"> 
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle">Joining Events</h2>
-                    <span style="font-size: 14px;">
-                    There are two types of events in Wildland Saga: DM events and Player events. DM events are events created by a DM to explore lore or fulfill an NPC's request. Player events are events initiated by players. The Discord has a channel where players can discuss what scouted areas they would like to investigate. <br>
-                    Once players have made a party and picked a date, they can charter a DM to run the event.<br><br>
-                    Most events will have a difficulty score and some tags that describe in a few words the type of gameplay that could be expected during the event, such as "combat", "dungeon", or "puzzle". This helps other interested players determine whether they want to join the event or not.<br><br>
-                    To join an event, simply sign up for it in the dedicated channel on the discord. For rolling dice and chatting, we will use Discord and the Discord bot Avrae. Whenever a combat or exploration map is required, players will be given a link to a Roll20 map (requires a <a href="https://roll20.net/" style="color: whitesmoke;">Roll20 account</a>).
-                    </span>
-                </div>
-                
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;"><b>Event Rewards</b></h2>
-
-                    <span style="font-size: 14px;">
-                        Players earn gold and milestones for completing events. The amount of gold and number of milestones depend on the difficulty of the event, as seen below.<br><br>
-                        <p style="text-align: center;"> <img src='./resources/easy.png' style="width: 7%; display: block; margin-left: auto; margin-right: auto;"> <br><b>Easy</b>: 3 milestones <br> ~100 gp</p><br>
-                        <p style="text-align: center;"> <img src='./resources/normal.png' style="width: 14%; display: block; margin-left: auto; margin-right: auto;"> <br><b>Normal</b>: 5 milestones <br> ~300 gp</p><br>
-                        <p style="text-align: center;"> <img src='./resources/hard.png' style="width: 21%; display: block; margin-left: auto; margin-right: auto;"> <br><b>Hard</b>: 10 milestones <br> ~800 gp</p><br>
-                        <p style="text-align: center;"> <img src='./resources/deadly.png' style="width: 28%; display: block; margin-left: auto; margin-right: auto;"> <br><b>Deadly</b>: 20 milestones <br> ~2000 gp</p><br>
-                    </span>
-                </div>  
-                
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle">Milestone Rewards</h2>
-
-                    <span style="font-size: 14px;">
-                        Milestones can be used to purchase the following rewards:<br><br>
-
-                        <table style="width:100%">
-                            <tr style="font-size: 18px; font-family: 'Cinzel Decorative';">
-                              <th>Reward</th>
-                              <th>Milestone Cost</th>
-                            </tr>
-                            <tr style="font-weight: 50;">
-                              <th>Level 4</td>
-                              <th>30 MS</td>
-                            </tr>
-                            <tr>
-                              <th>Level 5</td>
-                              <th>40 MS</td>
-                            </tr>
-                            <tr>
-                                <th>Add Feat</td>
-                                <th>40 MS</td>
-                            </tr>
-                            <tr>
-                                <th>Add Eldritch Invocation</td>
-                                <th>30 MS</td>
-                            </tr>
-                            <tr>
-                                <th>Add Race</td>
-                                <th>60 MS</td>
-                            </tr>
-                            <tr>
-                                <th>Add Archetype</td>
-                                <th>80 MS</td>
-                            </tr>
-                            <tr>
-                                <th>Add Class</td>
-                                <th>100 MS</td>
-                            </tr>
-                          </table> 
-                          <br><br>
-                          Note that any milestone reward other than a level requires at least one Settlement Time worth of describing how your character establishes this reward. Furthermore, Settlement Time can be used to lower the milestone cost for any reward other than levels, 
-                          <a href="https://bakumal.github.io/WildlandSaga/#settlement" style="color: whitesmoke">as described there</a>.
-                    </span>
-
-                </div>
-            </div>
-
-        </section>
-
-        <section id="settlement" class="section">
-
-            <h1 class="section__title">The Settlement</h1>
-
-            <div data-content class="section__content"> 
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;">Feasts</h2>
-
-                    <span style="font-size: 14px;">
-                        At the end of each week, a feast is held in the mead hall. Players can contribute crafted or cooked items, or materials for food and drink, to provide various bonuses to the feast. The following week all players have this feast bonus for one session. The bonus could range from advantage on certain checks or saves, to temporary hit points, to inspiration.
-                    </span>
-                </div>
-                
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;">Settlement Time</h2>
-
-                    <span style="font-size: 14px;">
-                        Players can spend their time between adventures working or loafing around the settlement, <a href="https://bakumal.github.io/WildlandSaga/#crafting" style="color: whitesmoke">crafting.</a> or pursuing some other ambition. These ambitions can be used to lower the milestone cost of 
-                        <a href="https://bakumal.github.io/WildlandSaga/#events" style="color: whitesmoke">milestone rewards</a> other than levels. For each successful Settlement Time check, the cost is reduced by 10 milestones. The type of the check and the DC are determined by an admin, but the DC will always increase for each successive check.<br><br>
-                        As an example of an ambition, a character might spend their days in the settlement training or trying to unearth arcane secrets, which might help them unlock a specific archetype. Another character might search for a lost people, or try and establish traderoutes with another people, with could reduce the cost of unlocking a specific race.
-                    </span>
-                </div>
-
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;">Scouting</h2>
-
-                    <span style="font-size: 14px;">
-                        Each week, instead of spending their time between adventures in the settlement, player characters may opt to scout out the island in a direction of their choosing. They must succeed on a Survival check, the DC of which will get higher the further away from the settlement they are.
-                        Succeeding on this check will give them some information as to the lay of the land, and will fill in part of the map which will be revealed on the <a href="https://bakumal.github.io/WildlandSaga/#map" style="color: whitesmoke">website</a>.
-                        Interesting landmarks will also be revealed to the player, which might unlock new DM events. Proficiency with cartographer's tools or navigator's tools will allow a player to add their tool proficiency bonus to the check as well.
-                    </span>
-                </div>
-                
-            </div>
-
-        </section>
-
-        <section id="crafting" class="section">
-
-            <h1 class="section__title">Gathering & Crafting</h1>
-
-            <div data-content class="section__content"> 
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;">Gathering Resources</h2>
-
-                    <span style="font-size: 14px;">
-                        The players can gather resources during sessions. These resources, which can range from a supply of wood to the scales of a wyrm, can be used at the end of each week to craft items, transports, or even structures such as housing.<br>
-                        For most unusual or rare items, the effect that it would infer to a crafted item is described at the end of a session, or when the item is identified. However, some items are by their very nature hard to understand and the effects they may confer could be a complete surprise.<br>
-                    </span>
-                </div>
-                
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;"><b>Crafting Items</b></h2>
-                    <span style="font-size: 14px;">
-                        To craft an item, a player will need proficiency in the corresponding toolset (e.g. smith's tools to craft metal objects such as swords) and provide the wanted material, and a sum of gold for the rest of the materials needed for the item. This sum amounts to one quarter of the cost of a mundane version of the item. 
-                        Then the craftsman must make a check with their tools, the DC depending on the rarity of the materials used. <br>
-                        A single craftsman can only craft an item once per week, but another player can forego their own spare time to help the craftsman, giving them advantage on the roll.<br>
-                        <br>
-                        Buildings and transports, such as ships, require more work and materials than smaller items. Depending on the structure, anywhere from 2 to 10 successful crafting checks are needed, by one or more proficient craftsmen. The benefits of building these larger structures vary widely but are always potent.
-                    </span>
-                </div>
-
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;"><b>Discovering Spells</b></h2>
-                    <span style="font-size: 14px;">
-                        Players can spend their time experimenting with magic and doing research. To discover a new spell, the player has to make successful checks with either their Arcana (Arcane magic), Religion (Divine magic), or Nature (nature magic) skill. The DC that the player has to beat equals ten plus two times the level of the spell, and the number of successful check required equals the level of the spell.<br>
-                        When successful, the player can add one spell to the list of accepted spells with admin permission, or even homebrew their own. A character can only discover spells that their class can cast, and can switch out one of the spells they know for the new spell, if applicable.
-                    </span>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="charactercreation" class="section">
-
-            <h1 class="section__title">Character Creation</h1>
-
-            <div data-content class="section__content" style="font-family: 'Cinzel Decorative';"> 
-
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;">Choose your class(es) and race from the <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTRiPvS8o1Vwu2psMZ2_iEcvopB-tno-q5arTFSywveqe6RaHrtJfw_hk_w_jzJkPGRBBTFU_umeZU6/pubhtml?widget=true&amp;headers=false" style="color: whitesmoke;" target="_blank">available options</a>. 
-                        Characters start at level 3.<br><br>
-                        A player can have 2 characters at any one time, but can retire a character at any point.
-                    </h2>
-                </div>
-
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;">
-                        Fill in a copy of <a href="https://docs.google.com/spreadsheets/d/1oTmNkqrIuz2to8_pkF7htp2r3PMhRweSjede9toYL-A/edit?usp=sharing" style="color: whitesmoke" target="_black">this gsheet</a>.<br><br>
-                        You can redistribute the ability score bonuses of your chosen race. Stats will be determined with a 27 point buy system.
-                    </h2> 
-                    
-                </div>
-
-                <div data-content class="section__panel">
-                    <h2 class="section__subtitle" style="text-align: center;">Sent in your character to be approved by an administrator via  <a href="https://forms.gle/wWZRFeVgAwxXjM6U7" style="color: whitesmoke" target="_black">this form</a>.</h2>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <!--
-        <section id="button" class="section">
-
-            <button id="modBtn">
-                Open Modal
-            </button>
-                
-            <div id="modBox" class="modal">
-                                
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
-                </div>
-                                    
-            </div>
-
-
-            <div class='container'>
-                <div class='wrap'>
-                    <div class="hero__bg">
-                        <img class="hero__img" src="./resources/background.png" />
-                    </div>
-                    <video data-depth='50' height='540' id='myVideo' width='620'>
-                        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/ink4.mp4" type="video/mp4">
-                    </video>
-                    <div class='wrap_inner'>
-                        <div class='container_inner'>
-                            <h1>The inkblot modal</h1>
-                            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/trill.png'>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            <a>confirm</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class='button'>Open the modal</div>
-
-        </section>
-        -->
-
-        <section id="map" class="section">
-
-			<!-- Trigger the Modal 
-			<div id="map_container">
-				<img id="wildlandmap" src="./resources/WildlandSaga_Island_grim.jpg" alt="Map of the Wildland Island">
+	<head>
+		<meta charset="UTF-8" />
+
+		<title>Wildland Saga</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/main-mobile.css" />
+
+		<link rel="icon" type="image/png" href="./wildlands.ico">
+
+		<script type='text/javascript' src='./scripts/scroll.js'></script>
+		<script type='text/javascript' src='./scripts/magnify.js'></script>
+
+		<!-- External Sources -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<nav role="navigation">
+			<div id="nav__toggle">
+				<!-- 'Fake' checkbox to check :checked -->
+				<input type="checkbox" />
+
+				<!-- Hamburger menu layers -->
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<!-- Popout menu -->
+				<ul id="nav__menu">
+					<a href="#home">
+					<li>Wildland Saga</li></a>
+					<a href="#info">
+					<li>What is Wildland Saga?</li></a>
+					<a href="#join">
+					<li>Starting your Saga</li></a>
+					<a href="#rules">
+					<li>The Rules</li></a>
+					<a href="#homebrew">
+					<li>Homebrew Mechanics</li></a>
+					<a href="#events">
+					<li>Joining Events</li></a>
+					<a href="#settlement">
+					<li>The Settlement</li></a>
+					<a href="#crafting">
+					<li>Gathering & Crafting</li></a>
+					<a href="#charactercreation">
+					<li>Character Creation</li></a>
+					<a href="#map">
+					<li>The Map</li></a>
+				</ul>
 			</div>
+		</nav>
 
-             The Modal
-            <div id="myModal" class="modal">
+		<section id="home">
+			<div class="container">
 
-                 The Close Button 
-                <span class="close">&times;</span>
+				<div class="hero__bg">
+					<img class="hero__img" src="./resources/background.png" />
+				</div>
 
-                Modal Content (The Image)
-                <img class="modal-content" id="wildlandmap_modal">
+				<div data-content class="row justify-content-center">
+					<h1 class="col-12 text-center hero__title">Wildland Saga</h1>
 
-                Modal Caption (Image Text) 
-                <div id="caption"></div>
-            </div> -->
+					<p class="col-12 text-center hero__intro">A Community-Driven Dungeons and Dragons Game</p>
+				</div>
 
+			</div>
+		</section>
 
-            
-        </section>
+		<section id="info" class="section">
+			<div class="container">
+			
+				<h1 class="section__title">What is Wildland Saga?</h1>
 
-    </main>
+				<div data-content class="row justify-content-center">
+					<span class="col-9 section__subtitle">
+						The Wildlands, a group of dangerous, rough and unexplored islands, avoided by all but those who would put their lives on the line for fame and riches... or those looking for adventure. Who knows what you might find here? <br><br>
+					
+						Wildland Saga is a community-driven game for D&D 5th edition. Set in a grim, norse-inspired setting, the players try to build a settlement in unexplored lands, while roaming those same lands in search for ancient treasures.
+					</span>
+				</div>
+			
+			</div>
+		</section>
 
-    <script type='text/javascript' src='./scripts/scroll.js'></script>
-    <script type='text/javascript' src='./scripts/modal.js'></script>
-    <script type='text/javascript' src='./scripts/modalbox.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type='text/javascript' src='./scripts/modalblot.js'></script>
+		<section id="join" class="section">
+			<div class="container">
 
+				<h1 class="section__title">Starting YOUR Saga</h1>
 
-</body>
+				<div data-content class="row gy-4 justify-content-center">
+					<p class="col-md-4 text-center section__subtitle" style="font-size: 30px; display: block;">
+						<a href="#rules">Read the Rules</a>
+					</p>
+
+					<p class="col-md-4 section__subtitle" style="font-size: 30px; display: block;">
+						<a href="https://discord.gg/6NgVPpU" target="_blank">Join the Discord</a>
+					</p>
+
+					<p class="col-md-6 section__subtitle" style="font-size: 30px; display: block;">
+						<a href="#charactercreation">Create your character</a>
+					</p>
+				</div>
+			
+			</div>
+		</section>
+
+		<section id="rules" class="section">
+			<div class="container">
+
+				<h1 class="section__title">The Rules</h1>
+				<h2 class="section__subtitle">Below is a non-exhaustive list of rules that every member is expected to adhere to.</h2>
+
+				<div data-content class="row justify-content-center" style="font-size: 16px;"> 
+					<div class="row gy-4 flex-column col-md-4">
+						<span><b>1.</b> Be nice, be kind. We are all here to play a game and have fun. Harassment and hate will <i><b>not</b></i> be tolerated.</span>
+						
+						<span><b>2.</b> Should conflict arise, we expect it to be handled maturely. This means that out of character conflict should not be handled publicly. In-character grievances should be worked out with your fellow players.
+						If you feel uncomfortable with anything, please do not hesitate to let an admin know.</span>
+			
+						<span><b>3.</b> We expect everyone to play fair. Meta-gaming, rules-lawyering, and just straight up cheating are all considered to be unfair.</span>
+					</div>
+
+					<div class="row gy-4 flex-column col-md-4">
+	
+						<span><b>4.</b> Avoid NSFW material and sexual talk. The server is aimed at adults, but everyone is comfortable with different levels of risque. Should things look to be heading in this direction in a game, feel free to 'fade to black'.</span>
+						
+						<span><b>5.</b> Avoid oversharing. Be mindful that most users might be looking for a more casual gaming and chatting experience. As we want everyone to be comfortable, please refrain from sharing excessive personal details.</span>
+						
+						<span><b>6.</b> If you sign up for a session, the session's DM will expect you to be there. Please be mindful that creating and balancing sessions requires time and energy. Signing off at the last second is sometimes unavoidable, but please keep the occurences to a minimum.</span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="homebrew" class="section">
+			<div class="container">
+
+				<h1 class="section__title">Homebrew Mechanics</h1>
+				<h2 class="section__subtitle">To balance this west-march style of game, Wildland Saga uses some homebrew rules outlined below.</h2>
+
+				<div data-content class="row justify-content-center" style="padding-top:30px; font-size: 14px;"> 
+					<div class="col-md-3">
+						<span>
+							<b>Lower hit point pool:</b> To balance for the shorter sessions, characters will have lower hit points. This calculation is already incorporated in the gsheet, which will automatically calculate your hit points based on your Constitution score and class(es).<br><br>
+							<b>Hit die recovery:</b> As there are less short rests in this style of game, characters can use their action to spend any number of hit dice, and recover hit points equal to the amount rolled (<i>without</i> adding their Constitution modifier; this is reserved for short rests).<br> Additionally, warlocks can use their action to spend half of their hit dice, rounded up, to recover a Pact Magic spell slot.<br><br>
+							<b>Level Range</b> To prevent excluding players from sessions due to level gaps, a level range is in effect. In the current arc, characters start at level 3 and max out at level 5. This level range increases with new arcs.<br><br>
+						</span>
+					</div>
+					
+					<div class="col-md-4">
+						<span>
+							<b>Injured State:</b> To keep things more interesting for all players, the 'injuried state' exists. A player character enters this state when they reach 0 hit points, instead of being knocked unconscious. While in this state you gain the following conditions:<br><br>
+							- You can no longer concentrate on spells, if you are concentrating on a spell it immediately fails.<br><br>
+						
+							- If you suffer damage you roll a Death Saving Throw. The first two failures result in a minor injury, and a third failure causes a major injury or death. If you succeed three times you are knocked unconscious. <br><br>
+							
+							- If you suffer damage from a single instance that exceeds your Constitution score, you automatically fail a Death Saving Throw.<br><br>
+							
+							- Death Saving Throw results reset after a short or long rest.<br/><br/>
+						</span>
+					</div>
+
+					<div class="col-md-3">
+						<span>
+							<b>Wild shape:</b> The druid's wild shape has the following homebrew changes:<br><br>
+
+							- You can use the Wild Shape feature as an At-Will ability.<br><br>
+
+							- Whilst Wild Shaped you can use an action to transform into a different creature, or use a bonus action to revert back to your normal form.<br><br>
+
+							- You gain a Wild Shape Hit Point total equal to your squared wisdom modifier times your druid level ((Wisdom Modifier^2) * Druid Level).
+							These new Hit Points are shared between any form you take, and once they are depleted you can no longer use the Wild Shape feature until you finish a short or long rest.<br><br>
+
+							- When you finish a short rest you can spend a Hit Dice to restore 1d10 to your Wild Shape Hit Point total. When you finish a Long rest you regain all of your Wild Shape Hit Points.<br><br>
+
+							- Circle of the Moon Druids can now ignore the Limitations section on Beast Shapes.
+						</span>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+
+		<section id="events" class="section">
+			<div class="container">
+
+				<h1 class="section__title">Events</h1>
+
+				<div data-content class="row gy-5 justify-content-center"> 
+					<div class="col-md-4">
+						<h2 class="section__subtitle">Joining Events</h2>
+						<span style="font-size: 14px;">
+						There are two types of events in Wildland Saga: DM events and Player events. DM events are events created by a DM to explore lore or fulfill an NPC's request. Player events are events initiated by players. The Discord has a channel where players can discuss what scouted areas they would like to investigate. <br>
+						Once players have made a party and picked a date, they can charter a DM to run the event.<br><br>
+						Most events will have a difficulty score and some tags that describe in a few words the type of gameplay that could be expected during the event, such as "combat", "dungeon", or "puzzle". This helps other interested players determine whether they want to join the event or not.<br><br>
+						To join an event, simply sign up for it in the dedicated channel on the discord. For rolling dice and chatting, we will use Discord and the Discord bot Avrae. Whenever a combat or exploration map is required, players will be given a link to a Roll20 map (requires a <a href="https://roll20.net/" target="_blank">Roll20 account</a>).
+						</span>
+					</div>
+					
+					<div class="col-md-3">
+						<h2 class="section__subtitle" style="text-align: center;"><b>Event Rewards</b></h2>
+
+						<span style="font-size: 14px;">
+							Players earn gold and milestones for completing events. The amount of gold and number of milestones depend on the difficulty of the event, as seen below.<br><br>
+							<p style="text-align: center;"> <img src='./resources/easy.png' style="width: 7%; display: block; margin-left: auto; margin-right: auto;"> <br><b>Easy</b>: 3 milestones <br> ~100 gp</p><br>
+							<p style="text-align: center;"> <img src='./resources/normal.png' style="width: 14%; display: block; margin-left: auto; margin-right: auto;"> <br><b>Normal</b>: 5 milestones <br> ~300 gp</p><br>
+							<p style="text-align: center;"> <img src='./resources/hard.png' style="width: 21%; display: block; margin-left: auto; margin-right: auto;"> <br><b>Hard</b>: 10 milestones <br> ~800 gp</p><br>
+							<p style="text-align: center;"> <img src='./resources/deadly.png' style="width: 28%; display: block; margin-left: auto; margin-right: auto;"> <br><b>Deadly</b>: 20 milestones <br> ~2000 gp</p><br>
+						</span>
+					</div>  
+					
+					<div class="col-md-4">
+						<h2 class="section__subtitle">Milestone Rewards</h2>
+
+						<span style="font-size: 14px;">
+							Milestones can be used to purchase the following rewards:<br><br>
+
+							<table style="width:100%">
+								<tr style="font-size: 18px; font-family: 'Cinzel Decorative';">
+								<th>Reward</th>
+								<th>Milestone Cost</th>
+								</tr>
+								<tr style="font-weight: 50;">
+								<th>Level 4</td>
+								<th>30 MS</td>
+								</tr>
+								<tr>
+								<th>Level 5</td>
+								<th>40 MS</td>
+								</tr>
+								<tr>
+									<th>Add Feat</td>
+									<th>40 MS</td>
+								</tr>
+								<tr>
+									<th>Add Eldritch Invocation</td>
+									<th>30 MS</td>
+								</tr>
+								<tr>
+									<th>Add Race</td>
+									<th>60 MS</td>
+								</tr>
+								<tr>
+									<th>Add Archetype</td>
+									<th>80 MS</td>
+								</tr>
+								<tr>
+									<th>Add Class</td>
+									<th>100 MS</td>
+								</tr>
+							</table> 
+							<br>
+							Note that any milestone reward other than a level requires at least one Settlement Time worth of describing how your character establishes this reward. Furthermore, Settlement Time can be used to lower the milestone cost for any reward other than levels, 
+							<a href="#settlement">as described there</a>.
+						</span>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="settlement" class="section">
+			<div class="container">
+
+				<h1 class="section__title">The Settlement</h1>
+
+				<div data-content class="row gy-5 justify-content-center"> 
+					<div class="col-md-4">
+						<h2 class="section__subtitle" style="text-align: center;">Feasts</h2>
+
+						<span style="font-size: 14px;">
+							At the end of each week, a feast is held in the mead hall. Players can contribute crafted or cooked items, or materials for food and drink, to provide various bonuses to the feast. The following week all players have this feast bonus for one session. The bonus could range from advantage on certain checks or saves, to temporary hit points, to inspiration.
+						</span>
+					</div>
+					
+					<div class="col-md-4">
+						<h2 class="section__subtitle" style="text-align: center;">Settlement Time</h2>
+
+						<span style="font-size: 14px;">
+							Players can spend their time between adventures working or loafing around the settlement, <a href="#crafting">crafting.</a> or pursuing some other ambition. These ambitions can be used to lower the milestone cost of 
+							<a href="#events">milestone rewards</a> other than levels. For each successful Settlement Time check, the cost is reduced by 10 milestones. The type of the check and the DC are determined by an admin, but the DC will always increase for each successive check.<br><br>
+							As an example of an ambition, a character might spend their days in the settlement training or trying to unearth arcane secrets, which might help them unlock a specific archetype. Another character might search for a lost people, or try and establish traderoutes with another people, with could reduce the cost of unlocking a specific race.
+						</span>
+					</div>
+
+					<div class="col-md-4">
+						<h2 class="section__subtitle" style="text-align: center;">Scouting</h2>
+
+						<span style="font-size: 14px;">
+							Each week, instead of spending their time between adventures in the settlement, player characters may opt to scout out the island in a direction of their choosing. They must succeed on a Survival check, the DC of which will get higher the further away from the settlement they are.
+							Succeeding on this check will give them some information as to the lay of the land, and will fill in part of the map which will be revealed on the <a href="#map">website</a>.
+							Interesting landmarks will also be revealed to the player, which might unlock new DM events. Proficiency with cartographer's tools or navigator's tools will allow a player to add their tool proficiency bonus to the check as well.
+						</span>
+					</div>
+					
+				</div>
+
+			</div>
+		</section>
+
+		<section id="crafting" class="section">
+			<div class="container">
+
+				<h1 class="section__title">Gathering & Crafting</h1>
+
+				<div data-content class="row gy-5 justify-content-center"> 
+					<div class="col-md-4">
+						<h2 class="section__subtitle" style="text-align: center;">Gathering Resources</h2>
+
+						<span style="font-size: 14px;">
+							The players can gather resources during sessions. These resources, which can range from a supply of wood to the scales of a wyrm, can be used at the end of each week to craft items, transports, or even structures such as housing.<br>
+							For most unusual or rare items, the effect that it would infer to a crafted item is described at the end of a session, or when the item is identified. However, some items are by their very nature hard to understand and the effects they may confer could be a complete surprise.<br>
+						</span>
+					</div>
+					
+					<div class="col-md-4">
+						<h2 class="section__subtitle" style="text-align: center;"><b>Crafting Items</b></h2>
+						<span style="font-size: 14px;">
+							To craft an item, a player will need proficiency in the corresponding toolset (e.g. smith's tools to craft metal objects such as swords) and provide the wanted material, and a sum of gold for the rest of the materials needed for the item. This sum amounts to one quarter of the cost of a mundane version of the item. 
+							Then the craftsman must make a check with their tools, the DC depending on the rarity of the materials used. <br>
+							A single craftsman can only craft an item once per week, but another player can forego their own spare time to help the craftsman, giving them advantage on the roll.<br>
+							<br>
+							Buildings and transports, such as ships, require more work and materials than smaller items. Depending on the structure, anywhere from 2 to 10 successful crafting checks are needed, by one or more proficient craftsmen. The benefits of building these larger structures vary widely but are always potent.
+						</span>
+					</div>
+
+					<div class="col-md-4">
+						<h2 class="section__subtitle" style="text-align: center;"><b>Discovering Spells</b></h2>
+						<span style="font-size: 14px;">
+							Players can spend their time experimenting with magic and doing research. To discover a new spell, the player has to make successful checks with either their Arcana (Arcane magic), Religion (Divine magic), or Nature (nature magic) skill. The DC that the player has to beat equals ten plus two times the level of the spell, and the number of successful check required equals the level of the spell.<br>
+							When successful, the player can add one spell to the list of accepted spells with admin permission, or even homebrew their own. A character can only discover spells that their class can cast, and can switch out one of the spells they know for the new spell, if applicable.
+						</span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="charactercreation" class="section">
+			<div class="container">
+
+				<h1 class="section__title">Character Creation</h1>
+
+				<div data-content class="row justify-content-center" style="font-family: 'Cinzel Decorative';"> 
+
+					<div class="col-md-3">
+						<h2 class="section__subtitle" style="text-align: center;">Choose your class(es) and race from the <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTRiPvS8o1Vwu2psMZ2_iEcvopB-tno-q5arTFSywveqe6RaHrtJfw_hk_w_jzJkPGRBBTFU_umeZU6/pubhtml?widget=true&amp;headers=false" target="_blank">available options</a>. 
+							Characters start at level 3.<br><br>
+							A player can have 2 characters at any one time, but can retire a character at any point.
+						</h2>
+					</div>
+
+					<div class="col-md-4">
+						<h2 class="section__subtitle" style="text-align: center;">
+							Fill in a copy of <a href="https://docs.google.com/spreadsheets/d/1oTmNkqrIuz2to8_pkF7htp2r3PMhRweSjede9toYL-A/edit?usp=sharing"target="_black">this gsheet</a>.<br><br>
+							You can redistribute the ability score bonuses of your chosen race. Stats will be determined with a 27 point buy system.
+						</h2> 
+						
+					</div>
+
+					<div class="col-md-3">
+						<h2 class="section__subtitle" style="text-align: center;">Send in your character to be approved by an administrator via  <a href="https://forms.gle/wWZRFeVgAwxXjM6U7" target="_black">this form</a>.</h2>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="map" class="section">
+			<div class="container vh-100">
+
+				<div data-content class="row h-100 align-items-center justify-content-around">
+					<div class="col-md-11 img-magnifier-wrapper">
+						<img onload="magnify('wildlandmap', 1.5);" id="wildlandmap" src="./resources/WildlandSaga_Island_grim.jpg" alt="Map of the Wildland Island">
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</body>
 
 </html>
